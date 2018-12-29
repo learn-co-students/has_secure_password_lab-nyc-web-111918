@@ -1,0 +1,13 @@
+<h1>Hello, <%= session[:user_name] %></h1>
+
+<%= link_to 'Sign-up:', new_user_path %> <br>
+
+
+<%= link_to "Login:", login_path %> <br>
+
+
+<br>
+<br>
+<%= form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
+	<input type=submit value='logout'>
+<%end%>
