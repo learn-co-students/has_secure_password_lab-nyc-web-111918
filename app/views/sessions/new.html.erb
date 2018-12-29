@@ -1,0 +1,10 @@
+<h1>Sessions#new</h1>
+<h2>Login-in!!!one1!!!1!</h2>
+
+<%= form_for :user, url: '/login' do |f| %>
+Username: <%= f.text_field :username %>
+Password: <%= f.password_field :password %>
+Confirm password: <%= f.password_field :password_confirmation %>
+<%= f.submit "Submit" %>
+
+<%end%>
